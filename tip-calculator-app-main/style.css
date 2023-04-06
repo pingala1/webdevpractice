@@ -53,13 +53,17 @@ label, input{
     padding: 10px 20px;
     background-color: var(--clr-neutral-4);
     border: none;
+    font-family: var(--primary-font);
+    color: var(--clr-neutral-1);
+    font-size: var(--font-input-size);
+    text-align: right;
 }
 .tips-group{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    /* gap: 20px; */
 }
-.calculator-container .calculator{
+.calculation-container .calculator{
     width: 59%;
 }
 
@@ -69,8 +73,68 @@ label, input{
     border: none;
     color: var(--clr-white);
     font-size: var(--font-input-size);
-    flex: 1;
+    width: calc(33.33% - 20px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: var(--primary-font);
+
 }
+
+.tips-group .button:hover{
+    background-color: var(--clr-neutral-4);
+    color: var(--clr-neutral-1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.calculation-result {
+    background-color: var(--clr-neutral-1);
+    width: 50%;
+    padding: 30px 40px;
+    border-radius: 10px;
+    
+}
+
+.calculation-amount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.main-title{
+    color: var(--clr-neutral-3);
+    font-size: 18px;
+}
+ .subtitle{
+        color: var(--clr-neutral-3);
+        font-size: 14px;
+    }
+    .amount{
+        font-size: 30px;
+        color: var(--clr-primary);
+    }
+
+    .calculation-result .button{
+        width: 100%;
+        margin-top: auto;
+        background-color: var(--clr-neutral-4);
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border: none;
+        font-family: var(--primary-font);
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    .calculation-result .button:hover{
+      cursor: pointer;
+      background-color: var(--clr-primary);
+      transition: all 0.2s;
+      color: var(--clr-neutral-4);
+
+
+    }
+
+
+
 /* .tips-group input{ */
     /* display: inline; */
 /* } */
